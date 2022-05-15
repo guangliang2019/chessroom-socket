@@ -10,7 +10,7 @@ const port = process.env.PORT || 2333;
 const { Server } = require('socket.io');
 const io = new Server(port, {
   cors: {
-    origin: '*',
+    origin: 'http://localhost:8080',
     credentials: true,
   },
 });
